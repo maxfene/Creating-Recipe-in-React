@@ -15,23 +15,23 @@ function RecipeCreate({addRecipe}) {
       [target.name]: target.value,
     })
   };                   
-
+//handleSubmit creates new recipe form form and clears form contents
   const handleSubmit = (e) => {
   e.preventDefault();
   addRecipe(formData);
   setFormData({ ...initFormState });
   };
 
-  // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
-  // TODO: Add the required input and textarea form elements.
-  // TODO: Add the required submit and change handlers
+//text areas should be used for ingredients and preparation
+//input areas type text should be used for recipe name and cuisine
+//photo should be type url
   
   return (
     <form name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
           <tr>
-            <td align="left">
+            <td>
                <input 
                  id="name"
                  name="name"
@@ -50,7 +50,7 @@ function RecipeCreate({addRecipe}) {
                   onChange={handleChange}
                   required={true}/>
             <td>
-            <td align="left">
+            <td>
                <input 
                  id="photo"
                  name="photo" 
@@ -60,7 +60,7 @@ function RecipeCreate({addRecipe}) {
                  type="url" 
                  required={true}/>
             </td>
-            <td align="left">
+            <td>
                <textarea 
                  id="ingredients"
                  name="ingredients" 
@@ -69,7 +69,7 @@ function RecipeCreate({addRecipe}) {
                  onChange={handleChange}
                  required={true} />
             </td>
-            <td align="left">
+            <td>
                <textarea 
                  id="preparation"
                  name="preparation" 
@@ -79,7 +79,7 @@ function RecipeCreate({addRecipe}) {
                  required={true} 
                  cols="5" rows="5"/>
             </td>
-            <td align="left">
+            <td>
               <button type="submit">Create</button>
             </td>
             </td>

@@ -128,16 +128,12 @@ tbody:nth-child(6){
 
 /*form sizing*/
 input {
-  resize: horizontal;
-/*   text-align: center; */
   width: 50%;
   size:20;
-  padding: 2px;
+  margin: 8px 0;
 }
 textarea {
-  size: 40;
   width: 100%;
   text-align: center;
-  padding: 2px;
 }
 
