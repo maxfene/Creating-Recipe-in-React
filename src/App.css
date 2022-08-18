@@ -137,3 +137,26 @@ textarea {
   text-align: center;
 }
 
+form {
+  overflow: hidden;
+}
+input {
+  display: flex;
+  padding: 10px 50px; 
+  float: left;
+  width: 50px;
+  margin: auto;
+  vertical-align: bottom;
+}
+textarea {
+  float: left;
+  width: 100%;
+}
+
+.formButton {
+float: right;
+}
+
+.formCuisine {
+  vertical-align: middle;
+}
